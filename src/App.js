@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NotFound from './Components/NotFound';
-import Home from './Components/home'; // Import your other components
+import NotFoundPage from './Components/NotFound';
+import Home from './Components/home';
 
-const App = () => {
+
+function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                {/* Define other routes here */}
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Add other routes as needed */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Router>
     );
-};
+  }
+
 
 export default App;
