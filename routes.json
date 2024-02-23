@@ -1,20 +1,8 @@
 {
-    "routes": [
-      {
-        "route": "/404",
-        "serve": "/index.html",
-        "statusCode": 200
-      },
-      {
-        "route": "/api/*",
-        "serve": "/api/index.js",
-        "statusCode": 200
-      },
-      {
-        "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
+    "platformErrorOverrides": [
+        {
+        "errorType": "NotFound",
+        "serve": "/404.html"
+        }
     ]
-  }
-  
+}
