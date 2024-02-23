@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "./Components/NotFound",
+      "serve": "./Components/NotFound",
+      "statusCode": 404
+    }
+  ]
+}
